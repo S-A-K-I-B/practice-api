@@ -1,0 +1,36 @@
+#heading{
+    background: #999697;
+background: -webkit-radial-gradient(circle farthest-corner at center center, #999697 0%, #231421 100%);
+background: -moz-radial-gradient(circle farthest-corner at center center, #999697 0%, #231421 100%);
+background: radial-gradient(circle farthest-corner at center center, #999697 0%, #231421 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+#error-message{
+    font-size: x-large;
+}
+
+#empty-message{
+    font-size: x-large;
+}
+
+#no-phone-msg{
+    font-size: x-large;
+}
+
+@media only screen and (max-width: 688px) {
+    #single-phone {
+        width: 90%  !important;
+        margin-left: 15px  !important;
+        margin-right: 0  !important;
+    }
+}
+
+@media only screen and (min-width: 689px) and (max-width: 991px) {
+    #single-phone {
+        width: 90%  !important;
+        margin-left: 35px  !important;
+        margin-right: 0  !important;
+    }
+}
