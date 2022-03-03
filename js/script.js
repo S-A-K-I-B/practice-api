@@ -43,7 +43,7 @@ const showSearchResult = phones => {
     else {
         document.getElementById('no-phone-msg').style.display = 'none';
         document.getElementById('spinners').style.display = 'none';
-        phones.forEach(phone => {
+        phones.forEach((phone, index) => {if (index < 10){
             const div = document.createElement('div');
             div.classList.add('col');
             div.innerHTML= `
@@ -56,7 +56,7 @@ const showSearchResult = phones => {
             `;
             searchResult.appendChild(div);
             document.getElementById('spinners').style.display = 'none';
-        })
+        }})
     }
 }
 
